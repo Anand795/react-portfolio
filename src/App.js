@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import GlobalStyle from "./globalStyles";
+import { ThemeProvider } from "styled-components";
+import { lightTheme } from "./components/Themes";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import MyWork from "./components/MyWork";
+import Blogs from "./components/Blogs";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={lightTheme}>
+      <>
+        <GlobalStyle />
+        {/* <h1>Hello World</h1> */}
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/mywork" element={<MyWork />} />
+          <Route exact path="/blogs" element={<Blogs />} />
+        </Routes>
+      </>
+    </ThemeProvider>
   );
 }
 
