@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "../../node_modules/react-router-dom";
 import HomeButton from "../subComponents/HomeButton";
 import {  LogoComponent } from "../subComponents/LogoComponent";
+import { SocialIcons } from '../subComponents/SocialIcons'
 
 const HomeContainer = styled.div`
   background: ${(props) => props.theme.body};
@@ -23,8 +24,9 @@ const Home = (props) => {
       <Container>
         <Link to="/">
           <HomeButton fill="currentColor" />
-          <LogoComponent />
         </Link>
+          <LogoComponent />
+          <SocialIcons />
       </Container>
     </HomeContainer>
   );
