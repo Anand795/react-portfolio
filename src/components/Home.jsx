@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "../../node_modules/react-router-dom";
 import HomeButton from "../subComponents/HomeButton";
@@ -84,8 +84,8 @@ const rotate = keyframes`
 
 const Center = styled.button`
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: ${(props) => (props.click ? "85%" : "50%")};
+  left: ${(props) => (props.click ? "92%" : "50%")};
   transform: translate(-50%, -50%);
   border: none;
   background: transparent;
@@ -96,17 +96,22 @@ const Center = styled.button`
   flex-direction: column;
   justify-content: center;
 
+  transition: all 1s ease;
+
   & > :first-child {
     animation: ${rotate} infinite 2.5s linear;
   }
 
   & > :last-child {
+    display: ${(props) => (props.click ? "none" : "inline-block")};
     padding-top: 1rem;
   }
 `;
 
 const Home = ({ props }) => {
   // console.log(HomeContainer.componentStyle.rules[3]);
+  const [click, setClick] = useState(false);
+
   return (
     <HomeContainer>
       <Container>
@@ -115,9 +120,14 @@ const Home = ({ props }) => {
         </Link>
         <LogoComponent />
 
-        <Center>
+        <Center click={click}>
           {/* <img style={{width: "150px", height: "150px"}} src={yin} alt="" srcset="" /> */}
-          <YinYang width={200} height={200} fill="currentColor" />
+          <YinYang
+            onClick={() => setClick(!click)}
+            width={click ? 120 : 200}
+            height={click ? 120 : 200}
+            fill="currentColor"
+          />
           <span>Click Here</span>
         </Center>
 
