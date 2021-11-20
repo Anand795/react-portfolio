@@ -8,7 +8,7 @@ const Icons = styled.div`
   align-items: center;
   /* background-color: blue; */
 
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 2rem;
 

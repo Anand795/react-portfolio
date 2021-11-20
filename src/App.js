@@ -11,7 +11,7 @@ import Blogs from "./components/Blogs";
 function App() {
   return (
     <ThemeProvider theme={lightTheme}>
-      <>
+      
         <GlobalStyle />
         {/* <h1>Hello World</h1> */}
         <Routes>
@@ -19,8 +19,8 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/mywork" element={<MyWork />} />
           <Route exact path="/blogs" element={<Blogs />} />
+          <Route exact path="/skills" element={<About />} />
         </Routes>
-      </>
     </ThemeProvider>
   );
 }
