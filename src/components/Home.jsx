@@ -85,11 +85,12 @@ const rotate = keyframes`
 `;
 
 const Center = styled.button`
-  position: absolute;
+  position: fixed;
   top: ${(props) => (props.click ? "85%" : "50%")};
   left: ${(props) => (props.click ? "92%" : "50%")};
   transform: translate(-50%, -50%);
   border: none;
+  outline: none;
   background: transparent;
   cursor: pointer;
   align-items: center;
@@ -101,13 +102,22 @@ const Center = styled.button`
   transition: all 1s ease;
 
   & > :first-child {
-    animation: ${rotate} infinite 2.5s linear;
+    animation: ${rotate} infinite 1.5s linear;
   }
 
   & > :last-child {
     display: ${(props) => (props.click ? "none" : "inline-block")};
     padding-top: 1rem;
   }
+`;
+
+const DarkDiv = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  right: 50%;
+  background-color: ${(props) => (props.click ? "black" : "transparent")};;
 `;
 
 const Home = ({ props }) => {
@@ -122,6 +132,7 @@ const Home = ({ props }) => {
         </Link>
         <LogoComponent />
 
+        <DarkDiv click={click} />
         <Center click={click}>
           {/* <img style={{width: "150px", height: "150px"}} src={yin} alt="" srcset="" /> */}
           <YinYang
