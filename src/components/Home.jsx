@@ -13,6 +13,7 @@ const HomeContainer = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  font-size: 17px;
 `;
 
 const Container = styled.div`
@@ -59,6 +60,7 @@ const Footer = styled.div`
   text-decoration: none;
   width: 100%;
   justify-content: space-evenly;
+  font-size: larger;
 
   position: absolute;
 `;

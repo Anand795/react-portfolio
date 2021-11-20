@@ -9,7 +9,7 @@ export const LogoComponent = () => {
     left: 2rem;
     top: 2rem;
     font-family: 'Permanent Marker', cursive;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     z-index: 3;
   `;
   return (
