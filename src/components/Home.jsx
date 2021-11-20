@@ -43,7 +43,7 @@ const Blog = styled.div`
 `;
 
 const Work = styled.div`
-  color: ${(props) => props.theme.text};
+  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   top: 50%;
   left: calc(1rem + 2vw);
   /* TODO: CHECK this CALC */
@@ -51,6 +51,18 @@ const Work = styled.div`
   transform: translate(-50%, -50%) rotate(-90deg);
   align-items: center;
 
+  z-index: 1;
+`;
+
+const About = styled.div`
+  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+  text-decoration: none;
+  position: absolute;
+  z-index: 1;
+`;
+const Skills = styled.div`
+  color: ${(props) => props.theme.text};
+  text-decoration: none;
   z-index: 1;
 `;
 
@@ -63,16 +75,6 @@ const Footer = styled.div`
   font-size: larger;
 
   position: absolute;
-`;
-const About = styled.div`
-  color: ${(props) => props.theme.text};
-  text-decoration: none;
-  z-index: 1;
-`;
-const Skills = styled.div`
-  color: ${(props) => props.theme.text};
-  text-decoration: none;
-  z-index: 1;
 `;
 
 const rotate = keyframes`
@@ -114,15 +116,23 @@ const Center = styled.button`
 const DarkDiv = styled.div`
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
+  background-color: black;
+  width: ${(props) => (props.click ? "50%" : "0%")};
+  height: ${(props) => (props.click ? "100%" : "0%")};
   right: 50%;
-  background-color: ${(props) => (props.click ? "black" : "transparent")};;
+  z-index: 1;
+  /* Height 0.5s with ease in......width ease in from 1s after 0.5s delay */
+  transition: height 0.5s ease, width 1s ease 0.5s;
 `;
 
 const Home = ({ props }) => {
   // console.log(HomeContainer.componentStyle.rules[3]);
   const [click, setClick] = useState(false);
+
+  const test = () => {
+    console.log("test");
+  };
 
   return (
     <HomeContainer>
@@ -130,7 +140,7 @@ const Home = ({ props }) => {
         <Link to="/">
           <HomeButton fill="currentColor" />
         </Link>
-        <LogoComponent />
+        <LogoComponent theme={click ? "dark" : "light"} />
 
         <DarkDiv click={click} />
         <Center click={click}>
@@ -164,18 +174,18 @@ const Home = ({ props }) => {
 
         {/* Work Component */}
         <Link to="/mywork">
-          <Work>
+          <Work click={click}>
             <h3>Work</h3>
           </Work>
         </Link>
 
         {/* Social Icons */}
-        <SocialIcons />
+        <SocialIcons theme={click ? "dark" : "light"} />
 
         {/* Footer */}
         <Footer>
           <Link to="/about">
-            <About>
+            <About click={click}>
               <h3>About</h3>
             </About>
           </Link>

@@ -1,15 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import {  PowerIcon } from "../components/AllSvgs";
+import { PowerIcon } from "../components/AllSvgs";
 
 const Home = styled.button`
-  position: fixed;
-  background: transparent;
+  /* TODO: Finilize the colors  */
+  position: absolute;
+  background: ${props => props.theme.body };
   border-radius: 50%;
   border: 1px solid black;
   cursor: pointer;
   left: 50%;
   top: 2rem;
+  /* transform: translate(-50%, 0)  scale(1.1);; */
+  transform: translate(-50%, 0) scale(1.1);
   /* transform: translate(-50%, -50%); */
   /* padding: 5px; */
   width: 2.2rem;
@@ -21,9 +24,9 @@ const Home = styled.button`
   justify-content: center;
 
   &:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     box-shadow: 0 0 15px #ffee10;
-    /* background-color: #ffee10; */
+    background-color: #f7f5a2;
   }
 `;
 
