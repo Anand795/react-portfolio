@@ -5,6 +5,7 @@ import HomeButton from "../subComponents/HomeButton";
 import { LogoComponent } from "../subComponents/LogoComponent";
 import { SocialIcons } from "../subComponents/SocialIcons";
 import { YinYang } from "../components/AllSvgs";
+import Intro  from "../components/Intro";
 // import yin from "../assets/yin.png";
 
 const HomeContainer = styled.div`
@@ -130,10 +131,6 @@ const Home = ({ props }) => {
   // console.log(HomeContainer.componentStyle.rules[3]);
   const [click, setClick] = useState(false);
 
-  const test = () => {
-    console.log("test");
-  };
-
   return (
     <HomeContainer>
       <Container>
@@ -197,6 +194,7 @@ const Home = ({ props }) => {
           </Link>
         </Footer>
       </Container>
+      {click ? <Intro /> : null}
     </HomeContainer>
   );
 };
