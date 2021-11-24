@@ -5,7 +5,8 @@ import HomeButton from "../subComponents/HomeButton";
 import { LogoComponent } from "../subComponents/LogoComponent";
 import { SocialIcons } from "../subComponents/SocialIcons";
 import { YinYang } from "../components/AllSvgs";
-import Intro  from "../components/Intro";
+import Intro from "../components/Intro";
+import { motion } from "framer-motion";
 // import yin from "../assets/yin.png";
 
 const HomeContainer = styled.div`
@@ -152,27 +153,27 @@ const Home = ({ props }) => {
         </Center>
 
         <Contact>
-          <h3>
+          <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a
               style={{ color: "inherit", textDecoration: "none" }}
               href="mailto:anandbale11@gmail.com"
             >
               Say Hi..
             </a>
-          </h3>
+          </motion.h3>
         </Contact>
 
         {/* Blog Cokmponent */}
         <Link to="/blog">
           <Blog>
-            <h3>Blog</h3>
+            <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Blog</motion.h3>
           </Blog>
         </Link>
 
         {/* Work Component */}
         <Link to="/mywork">
           <Work click={click}>
-            <h3>Work</h3>
+            <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Work</motion.h3>
           </Work>
         </Link>
 
@@ -183,13 +184,13 @@ const Home = ({ props }) => {
         <Footer>
           <Link to="/about">
             <About click={click}>
-              <h3>About</h3>
+              <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>About</motion.h3>
             </About>
           </Link>
 
           <Link to="/skills">
             <Skills>
-              <h3>My Skills</h3>
+              <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>My Skills</motion.h3>
             </Skills>
           </Link>
         </Footer>
