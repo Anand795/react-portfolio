@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import MyWork from "./components/MyWork";
-import Blogs from "./components/Blogs";
+import BlogPage from "./components/BlogPage";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/mywork" element={<MyWork />} />
-          <Route exact path="/blogs" element={<Blogs />} />
+          <Route exact path="/blogs" element={<BlogPage />} />
           <Route exact path="/skills" element={<About />} />
         </Routes>
     </ThemeProvider>

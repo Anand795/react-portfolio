@@ -164,7 +164,7 @@ const Home = ({ props }) => {
         </Contact>
 
         {/* Blog Cokmponent */}
-        <Link to="/blog">
+        <Link to="/blogs">
           <Blog>
             <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Blog</motion.h3>
           </Blog>
