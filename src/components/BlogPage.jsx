@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import HomeButton from "../subComponents/HomeButton";
@@ -7,6 +7,7 @@ import { LogoComponent } from "../subComponents/LogoComponent";
 import { SocialIcons } from "../subComponents/SocialIcons";
 import { BlogComponent } from "./BlogComponent";
 import { Blogs } from "../data/BlogData";
+import AnchorComponent from "../subComponents/AnchorComponent";
 
 const MainContainer = styled.div`
   background-image: url(${img});
@@ -41,6 +42,13 @@ const Grid = styled.div`
 `;
 
 const BlogPage = () => {
+  const [numbers, setNumbers] = useState(0);
+
+  useEffect(() => {
+    let num = (window.innerHeight - 70) / 30;
+    setNumbers(parseInt(num));
+  }, []);
+
   return (
     <MainContainer>
       <Container>
@@ -49,11 +57,12 @@ const BlogPage = () => {
         </Link>
         <LogoComponent />
         <SocialIcons />
+        <AnchorComponent numbers={numbers} />
 
         <Center>
           <Grid>
-            {Blogs.map(blog => {
-              return <BlogComponent key={blog.id} blog={blog} />
+            {Blogs.map((blog) => {
+              return <BlogComponent key={blog.id} blog={blog} />;
             })}
           </Grid>
         </Center>
