@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { PowerIcon } from "../components/AllSvgs";
+import { Link } from "react-router-dom";
 
 const Home = styled.button`
   /* TODO: Finilize the colors  */
   position: absolute;
-  background: ${props => props.theme.body };
+  background: ${(props) => props.theme.body};
   border-radius: 50%;
   border: 1px solid black;
   cursor: pointer;
@@ -32,10 +33,12 @@ const Home = styled.button`
 
 const HomeButton = () => {
   return (
-    <Home>
-      {/* <HomeIcon fill="currentColor" /> */}
-      <PowerIcon />
-    </Home>
+    <Link to="/">
+      <Home>
+        {/* <HomeIcon fill="currentColor" /> */}
+        <PowerIcon />
+      </Home>
+    </Link>
   );
 };
 

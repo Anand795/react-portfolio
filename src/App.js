@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import MyWork from "./components/MyWork";
 import BlogPage from "./components/BlogPage";
+import MySkillsPage from "./components/MySkillsPage";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/mywork" element={<MyWork />} />
           <Route exact path="/blogs" element={<BlogPage />} />
-          <Route exact path="/skills" element={<About />} />
+          <Route exact path="/skills" element={<MySkillsPage />} />
         </Routes>
     </ThemeProvider>
   );

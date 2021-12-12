@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import HomeButton from "../subComponents/HomeButton";
 import img from "../assets/blogs/backgroundimg.jpg";
 import { LogoComponent } from "../subComponents/LogoComponent";
@@ -52,9 +51,7 @@ const BlogPage = () => {
   return (
     <MainContainer>
       <Container>
-        <Link to="/">
-          <HomeButton fill="currentColor" />
-        </Link>
+        <HomeButton fill="currentColor" />
         <LogoComponent />
         <SocialIcons />
         <AnchorComponent numbers={numbers} />
