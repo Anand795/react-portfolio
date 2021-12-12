@@ -23,7 +23,8 @@ const Icons = styled.div`
 const Line = styled.span`
   width: 2px;
   height: 8rem;
-  background-color: ${(props) => props.color === "dark" ? darkTheme.text : darkTheme.body};
+  background-color: ${(props) =>
+    props.color === "dark" ? darkTheme.text : darkTheme.body};
 `;
 
 export const SocialIcons = (props) => {
@@ -48,6 +49,8 @@ export const SocialIcons = (props) => {
       <React.Fragment>
         <a target="_blank" href="https://github.com/Anand795" rel="noreferrer">
           <Github
+            width={26}
+            height={26}
             fill={props.theme === "dark" ? darkTheme.text : darkTheme.body}
           />
         </a>
