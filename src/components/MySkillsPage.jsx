@@ -5,7 +5,6 @@ import { Backend, Frontend } from "../components/AllSvgs";
 import HomeButton from "../subComponents/HomeButton";
 import { LogoComponent } from "../subComponents/LogoComponent";
 import { SocialIcons } from "../subComponents/SocialIcons";
-import { Link } from "react-router-dom";
 import { ParticleComponent } from "../subComponents/ParticleComponent";
 
 const Box = styled.div`

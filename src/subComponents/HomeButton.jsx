@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Home = styled.button`
   /* TODO: Finilize the colors  */
   position: absolute;
-  background: ${(props) => props.theme.body};
+  background: #FCF6F4;
   border-radius: 50%;
   border: 1px solid black;
   cursor: pointer;
