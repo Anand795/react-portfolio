@@ -6,6 +6,7 @@ import { LogoComponent } from "../subComponents/LogoComponent";
 import { SocialIcons } from "../subComponents/SocialIcons";
 import { ParticleComponent } from "../subComponents/ParticleComponent";
 import astro from "../assets/images/spaceman.png";
+import BigTitle from "../subComponents/BigTitle";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -83,6 +84,7 @@ const About = () => {
           <br />I believe everything is an Art when you put your consciousness
           in it. You can connect with me via social links.
         </Main>
+        <BigTitle text="ABOUT" top="84%" right="15%" />
       </Box>
     </ThemeProvider>
   );

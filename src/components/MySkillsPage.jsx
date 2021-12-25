@@ -6,6 +6,7 @@ import HomeButton from "../subComponents/HomeButton";
 import { LogoComponent } from "../subComponents/LogoComponent";
 import { SocialIcons } from "../subComponents/SocialIcons";
 import { ParticleComponent } from "../subComponents/ParticleComponent";
+import BigTitle from "../subComponents/BigTitle";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -138,6 +139,7 @@ const MySkills = () => {
             <p>VScode, Github, Codepen etc.</p>
           </Description>
         </Main>
+        <BigTitle text="SKILLS" top="85%" right="30%" />
       </Box>
     </ThemeProvider>
   );
