@@ -63,6 +63,7 @@ const About = styled.div`
   text-decoration: none;
   /* position: absolute; */
   z-index: 1;
+  font-weight: lighter;
 `;
 const Skills = styled.div`
   color: ${(props) => props.theme.text};
@@ -76,7 +77,7 @@ const Footer = styled.div`
   text-decoration: none;
   width: 100%;
   justify-content: space-evenly;
-  font-size: larger;
+  font-size: large;
 
   position: absolute;
 `;
@@ -168,7 +169,11 @@ const Home = ({ props }) => {
             whileTap={{ scale: 0.9 }}
           >
             <a
-              style={{ color: "inherit", textDecoration: "none" }}
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+                fontWeight: "200",
+              }}
               href="mailto:anandbale11@gmail.com"
             >
               Say Hi..
@@ -190,6 +195,7 @@ const Home = ({ props }) => {
               }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              style={{ fontWeight: "200" }}
             >
               Blog
             </motion.h3>
@@ -210,6 +216,7 @@ const Home = ({ props }) => {
               }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              style={{ fontWeight: "200" }}
             >
               Work
             </motion.h3>
@@ -234,6 +241,7 @@ const Home = ({ props }) => {
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                style={{ fontWeight: "200" }}
               >
                 About
               </motion.h3>
@@ -253,6 +261,7 @@ const Home = ({ props }) => {
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                style={{ fontWeight: "200" }}
               >
                 My Skills
               </motion.h3>
