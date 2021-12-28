@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Box = styled(NavLink)`
   text-decoration: none;
@@ -70,24 +71,42 @@ const Date = styled.span`
   padding: 0.5rem 0;
 `;
 
+const Container = styled(motion.div)``;
+
+// Framer configurations
+const item = {
+  hidden: {
+    scale: 0,
+  },
+  show: {
+    scale: 1,
+    transition: {
+      type: "spring",
+      duration: 0.5,
+    },
+  },
+};
+
 export const BlogComponent = (props) => {
   const { name, tags, date, imgSrc, link } = props.blog;
 
   return (
     // TODO: Fix the routing issue
-    <Box target="_blank" to={{ pathname: link }}>
-      {/* <a href={link} target="_blank" rel="noreferrer"> */}
-      {/* Blog Item */}
-      <Image img={imgSrc} />
-      <Title>{name}</Title>
-      <HashTags>
-        {tags.map((tag, id) => {
-          return <Tag key={id}>#{tag}</Tag>;
-        })}
-      </HashTags>
-      <Date>{date}</Date>
-      {/* </a> */}
-    </Box>
+    <Container variants={item}>
+      <Box target="_blank" to={{ pathname: link }}>
+        {/* <a href={link} target="_blank" rel="noreferrer"> */}
+        {/* Blog Item */}
+        <Image img={imgSrc} />
+        <Title>{name}</Title>
+        <HashTags>
+          {tags.map((tag, id) => {
+            return <Tag key={id}>#{tag}</Tag>;
+          })}
+        </HashTags>
+        <Date>{date}</Date>
+        {/* </a> */}
+      </Box>
+    </Container>
   );
 };
 

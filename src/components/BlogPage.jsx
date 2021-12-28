@@ -8,8 +8,9 @@ import { BlogComponent } from "./BlogComponent";
 import { Blogs } from "../data/BlogData";
 import AnchorComponent from "../subComponents/AnchorComponent";
 import BigTitle from "../subComponents/BigTitle";
+import { motion } from "framer-motion";
 
-const MainContainer = styled.div`
+const MainContainer = styled(motion.div)`
   background-image: url(${img});
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,7 +22,7 @@ const MainContainer = styled.div`
 
 const Container = styled.div`
   // TODO: Add background-color of RGBA from the props  :
-  background-color: ${props => `rgba(${props.theme.bodyRgba},0.8)`};
+  background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.8)`};
   width: 100%;
   height: auto;
   position: relative;
@@ -41,6 +42,19 @@ const Grid = styled.div`
   grid-gap: calc(1rem + 2vw);
 `;
 
+// Framer motion configs
+const main = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+
+    transition: {
+      staggerChildren: 0.5,
+      duration: 0.5,
+    },
+  },
+};
+
 const BlogPage = () => {
   const [numbers, setNumbers] = useState(0);
 
@@ -50,7 +64,12 @@ const BlogPage = () => {
   }, []);
 
   return (
-    <MainContainer>
+  <MainContainer
+      variants={main}
+      initial="hidden"
+      animate="show"
+      exit={{ opacity: 0, transition: { duration: 0.5 } }}
+    >
       <Container>
         <HomeButton fill="currentColor" />
         <LogoComponent />
