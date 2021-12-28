@@ -57,7 +57,7 @@ const AnchorComponent = (props) => {
   return (
     <Container>
       <PreDisplay ref={hiddenRef} className="hidden">
-        <Anchor width={70} height={70} fillColor="currentColor" />
+        <Anchor width={70} height={70} fillcolor="currentColor" />
       </PreDisplay>
       <Slider ref={ref}>
         {[...Array(props.numbers)].map((x, id) => {
@@ -66,12 +66,12 @@ const AnchorComponent = (props) => {
               key={id}
               width={25}
               height={25}
-              fillColor="currentColor"
+              fillcolor="currentColor"
               className="chain"
             />
           );
         })}
-        <Anchor width={70} height={70} fillColor="currentColor" />
+        <Anchor width={70} height={70} fillcolor="currentColor" />
       </Slider>
     </Container>
   );

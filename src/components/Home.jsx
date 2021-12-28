@@ -138,9 +138,7 @@ const Home = ({ props }) => {
   return (
     <HomeContainer>
       <Container>
-        <Link to="/">
-          <HomeButton fill="currentColor" />
-        </Link>
+        <HomeButton fill="currentColor" />
         <LogoComponent theme={click ? "dark" : "light"} />
 
         <DarkDiv click={click} />
