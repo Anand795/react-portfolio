@@ -15,6 +15,8 @@ const HomeContainer = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+
   font-size: 17px;
 `;
 
@@ -59,7 +61,7 @@ const Work = styled.div`
 const About = styled.div`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   text-decoration: none;
-  position: absolute;
+  /* position: absolute; */
   z-index: 1;
 `;
 const Skills = styled.div`
@@ -153,7 +155,18 @@ const Home = ({ props }) => {
         </Center>
 
         <Contact>
-          <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.h3
+            initial={{
+              y: -200,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            animate={{
+              y: 0,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <a
               style={{ color: "inherit", textDecoration: "none" }}
               href="mailto:anandbale11@gmail.com"
@@ -166,14 +179,40 @@ const Home = ({ props }) => {
         {/* Blog Cokmponent */}
         <Link to="/blogs">
           <Blog>
-            <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Blog</motion.h3>
+            <motion.h3
+              initial={{
+                y: -200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Blog
+            </motion.h3>
           </Blog>
         </Link>
 
         {/* Work Component */}
         <Link to="/mywork">
           <Work click={click}>
-            <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Work</motion.h3>
+            <motion.h3
+              initial={{
+                y: -200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Work
+            </motion.h3>
           </Work>
         </Link>
 
@@ -184,13 +223,39 @@ const Home = ({ props }) => {
         <Footer>
           <Link to="/about">
             <About click={click}>
-              <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>About</motion.h3>
+              <motion.h3
+                initial={{
+                  y: 70,
+                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                }}
+                animate={{
+                  y: 0,
+                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                About
+              </motion.h3>
             </About>
           </Link>
 
           <Link to="/skills">
             <Skills>
-              <motion.h3 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>My Skills</motion.h3>
+              <motion.h3
+                initial={{
+                  y: 70,
+                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                }}
+                animate={{
+                  y: 0,
+                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                My Skills
+              </motion.h3>
             </Skills>
           </Link>
         </Footer>

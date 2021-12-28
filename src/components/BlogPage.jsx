@@ -13,16 +13,16 @@ const MainContainer = styled.div`
   background-image: url(${img});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   background-attachment: fixed;
+  background-position: center;
   /* width: 100vw; */
   /* height: auto; */
 `;
 
 const Container = styled.div`
   // TODO: Add background-color of RGBA from the props  :
-  background-color: rgba(255, 255, 117, 0.7);
-  width: 100vw;
+  background-color: ${props => `rgba(${props.theme.bodyRgba},0.8)`};
+  width: 100%;
   height: auto;
   position: relative;
   padding-bottom: 5rem;
