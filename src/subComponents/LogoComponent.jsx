@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { darkTheme } from "../components/Themes";
 
-export const LogoComponent = (props) => {
-  const Logo = styled.span`
+const Logo = styled.span`
     display: inline-block;
     color: ${(props) =>
       props.color === "dark" ? darkTheme.text : darkTheme.body};
@@ -14,6 +13,8 @@ export const LogoComponent = (props) => {
     font-size: 2rem;
     z-index: 3;
   `;
+
+export const LogoComponent = (props) => {
   return (
     <React.Fragment>
       <Logo color={props.theme}>Anand</Logo>
