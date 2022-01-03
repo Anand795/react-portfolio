@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Box = styled(NavLink)`
+const Box = styled.div`
   text-decoration: none;
   width: calc(10rem + 15vw);
   height: 20rem;
@@ -26,10 +25,10 @@ const Box = styled(NavLink)`
   }
 
   /* background-color: aqua; */
-  & > :first-child {
+  /* & > :first-child {
     text-decoration: none;
     color: ${(props) => props.theme.text};
-  }
+  } */
 `;
 
 const Image = styled.div`
@@ -52,6 +51,7 @@ const Title = styled.div`
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   border-bottom: 1px solid ${(props) => props.theme.text};
+  text-decoration: none;
 
   ${Box}:hover & {
     border-bottom: 1px solid ${(props) => props.theme.body};
@@ -91,21 +91,28 @@ export const BlogComponent = (props) => {
   const { name, tags, date, imgSrc, link } = props.blog;
 
   return (
-    // TODO: Fix the routing issue
+    // TODO: Fix the routing issue - FIXED
     <Container variants={item}>
-      <Box target="_blank" to={{ pathname: link }}>
-        {/* <a href={link} target="_blank" rel="noreferrer"> */}
-        {/* Blog Item */}
-        <Image img={imgSrc} />
-        <Title>{name}</Title>
-        <HashTags>
-          {tags.map((tag, id) => {
-            return <Tag key={id}>#{tag}</Tag>;
-          })}
-        </HashTags>
-        <Date>{date}</Date>
-        {/* </a> */}
-      </Box>
+      <a
+        style={{ textDecoration: "none" }}
+        href={link}
+        rel="noreferrer"
+        target="_blank"
+      >
+        <Box>
+          {/* <a href={link} target="_blank" rel="noreferrer"> */}
+          {/* Blog Item */}
+          <Image img={imgSrc} />
+          <Title>{name}</Title>
+          <HashTags>
+            {tags.map((tag, id) => {
+              return <Tag key={id}>#{tag}</Tag>;
+            })}
+          </HashTags>
+          <Date>{date}</Date>
+          {/* </a> */}
+        </Box>
+      </a>
     </Container>
   );
 };

@@ -5,7 +5,7 @@ export const Work = [
         description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
         tags:["react","gsap","styledComponents"],
         
-        demo:"https://agency-website-eta.vercel.app/",
+        demo:"https://www.ghx.com/",
         github:"https://github.com/codebucks27/Agency-website"
     },
     {
