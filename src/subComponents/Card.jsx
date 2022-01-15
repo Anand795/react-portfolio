@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-import { Github } from "../components/AllSvgs";
 
 const Box = styled(motion.li)`
   width: 16rem;
@@ -102,7 +101,7 @@ const item = {
 };
 
 const Card = (props) => {
-  const { id, name, description, tags, demo, github } = props.data;
+  const { id, name, description, tags, demo} = props.data;
 
   return (
     <Box key={id} variants={item}>
