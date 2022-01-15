@@ -36,8 +36,8 @@ const Spaceman = styled.div`
 `;
 
 const Main = styled.div`
-  border: 2px solid ${props => props.theme.text};
-  color: ${props => props.theme.text};
+  border: 2px solid ${(props) => props.theme.text};
+  color: ${(props) => props.theme.text};
   padding: 2rem;
   width: 50vw;
   height: 60vh;
@@ -56,8 +56,7 @@ const Main = styled.div`
 
   font-family: "Ubuntu Mono", monospace;
   font-style: italic;
-
-`
+`;
 
 const About = () => {
   return (
@@ -73,13 +72,13 @@ const About = () => {
         </Spaceman>
 
         <Main>
-          I'm a front-end developer located in India. I love to create simple
-          yet beautiful websites with great user experience.
+          I'm a Full-Stack developer located in India. I deliver clean,
+          seamleass, functional code base as per the client requirements
           <br />
           <br />
-          I'm interested in the whole frontend stack Like trying new things and
-          building great projects. I'm an independent freelancer and blogger. I
-          love to write blogs and read books.
+          I love to read blogs and books. I manage an instagram account, where I
+          consistently post technical content when I come across interesting
+          topics.
           <br />
           <br />I believe everything is an Art when you put your consciousness
           in it. You can connect with me via social links.
