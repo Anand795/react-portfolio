@@ -1,48 +1,48 @@
 export const Work = [
     {
         id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
+        name:"Global Healthcare Exchange",
+        description:"GHX enables better patient care by maximizing automation, efficiency and accuracy of business processes.",
+        tags:["java","mysql","mongodb", "aws", "es"],
         
         demo:"https://www.ghx.com/",
         github:"https://github.com/codebucks27/Agency-website"
     },
     {
         id:2,
-        name:"Job listing website",
-        description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
+        name:"Bigyellowfish",
+        description:"It is a workplace technology solution that will help employees solve their everyday challenges to perform better",
+        tags:["Angular10","sass", "metronic"],
         
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
+        demo:"https://www.bigyellowfish.io/",
         github:"https://github.com/codebucks27/react-job-listing-website"
         
     },
     {
         id:3,
-        name:"Dev.to Clone",
-        description:"A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-        tags:["react","api","sass"],
+        name:"Digital Risk Assessment",
+        description:"It has set of tools allows you to quickly discover and report vulnerabilities in your application websites, networks, code etc. ",
+        tags:["Angular10","sass", "nodejs"],
         
-        demo:"http://devto-clone-codebucks27.vercel.app/",
+        demo:"https://digitalriskassessment.io/",
         github:"https://github.com/codebucks27/devto-clone"
     },
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
+        name:"Comcast Xfinity",
+        description:"Developing user-friendly OS using LightningJS that uses WebGL for rendering, resulting in high-performance browser-based TV Apps.",
+        tags:["LightningJS","github", "RDK"],
         
-        demo:"https://react-sidebar.vercel.app/",
+        demo:"https://www.xfinity.com/stream/",
         github:"https://github.com/codebucks27/react-sidebar"
        
     },{
         id:5,
-        name:"Todo App(React + Redux)",
-        description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-        tags:["react","redux","framer-motion"],
+        name:"React Portfolio",
+        description:"Portfolio webpage designed using ReactJS and framer-motion for smooth animations.",
+        tags:["react","framer-motion", "styled-components"],
         
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
+        demo:"https://heuristic-goodall-c2f0cc.netlify.app/",
         github:"https://github.com/codebucks27/React-Redux-Todo-App"
         
     },
