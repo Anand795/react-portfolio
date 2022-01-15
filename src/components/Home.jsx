@@ -61,7 +61,7 @@ const Work = styled.div`
 const About = styled.div`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   text-decoration: none;
-  /* position: absolute; */
+  position: absolute;
   z-index: 1;
   font-weight: lighter;
 `;

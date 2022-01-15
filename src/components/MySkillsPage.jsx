@@ -99,22 +99,22 @@ const MySkills = () => {
             <span>Backend Developer</span>
           </Title>
           <Description>
-            I love to create design which speaks, Keep it clean, minimal and
-            simple.
+            Helping to create functional, seamless experience for the end-users together with the clients.
           </Description>
           <Description>
-            <strong>I LIKE TO DESIGN</strong>
-            <ul>
+            <strong>SKILLS</strong>
+            {/* <ul>
               <li>Web Design</li>
               <li>Mobile Apps</li>
               <li>TOOLS Figma</li>
               <li>Web Design Mobile Apps</li>
-            </ul>
+            </ul> */}
+            <p>Java, MySql, Mongodb, Elastic search, Postgres</p>
           </Description>
           <Description>
             <strong>TOOLS</strong>
             <ul>
-              <li>Figma</li>
+              <li>Eclipse, Intellij, DBeaver</li>
             </ul>
           </Description>
         </Main>
@@ -124,19 +124,16 @@ const MySkills = () => {
             <span> Frontend Developer</span>
           </Title>
           <Description>
-            I value business or brand for which i'm creating, thus i enjoy
-            bringing new ideas to life.
+            I like to code things from scratch, and enjoy bringing ideas to life
+            in the browser.
           </Description>
           <Description>
             <strong>Skills</strong>
-            <p>
-              Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase
-              etc.
-            </p>
+            <p>Html, Css, JS, Angular10, React, Bootstrap, LightningJS</p>
           </Description>
           <Description>
-            <strong>Tools</strong>
-            <p>VScode, Github, Codepen etc.</p>
+            <strong>Tools/SCM</strong>
+            <p>VScode, Github, Bitbucket etc.</p>
           </Description>
         </Main>
         <BigTitle text="SKILLS" top="85%" right="30%" />
