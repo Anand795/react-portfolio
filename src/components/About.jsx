@@ -73,10 +73,10 @@ const About = () => {
 
         <Main>
           I'm a Full-Stack developer located in India. I deliver clean,
-          seamleass, functional code base as per the client requirements
+          seamless, functional code base as per the client requirements
           <br />
           <br />
-          I love to read blogs and books. I manage an instagram account, where I
+          I love to read blogs and books. I manage an Instagram account, where I
           consistently post technical content when I come across interesting
           topics.
           <br />
