@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-import { Github } from "../components/AllSvgs";
 
 const Box = styled(motion.li)`
   width: 16rem;
@@ -53,7 +52,9 @@ const Links = styled.button`
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
   text-decoration: none;
-  padding: 0.5rem calc(2rem + 2vw);
+  padding: 0.4rem calc(2rem + 1.5vw);
+  /* width: 100%;
+  padding: 0.45rem; */
   border-radius: 0 0 0 50px;
   font-size: calc(1rem + 0.5vw);
   border: none;
@@ -69,16 +70,16 @@ const Links = styled.button`
   }
 `;
 
-const GithubLink = styled.span`
-  color: inherit;
-  text-decoration: none;
+// const GithubLink = styled.span`
+//   color: inherit;
+//   text-decoration: none;
 
-  ${Box}:hover & {
-    & > * {
-      fill: ${(props) => props.theme.text};
-    }
-  }
-`;
+//   ${Box}:hover & {
+//     & > * {
+//       fill: ${(props) => props.theme.text};
+//     }
+//   }
+// `;
 
 const Footer = styled.footer`
   display: flex;
@@ -100,7 +101,7 @@ const item = {
 };
 
 const Card = (props) => {
-  const { id, name, description, tags, demo, github } = props.data;
+  const { id, name, description, tags, demo} = props.data;
 
   return (
     <Box key={id} variants={item}>
@@ -118,11 +119,11 @@ const Card = (props) => {
             Visit
           </a>
         </Links>
-        <GithubLink>
+        {/* <GithubLink>
           <a href={github} rel="noreferrer" target="_blank">
             <Github width={30} height={30} />
           </a>
-        </GithubLink>
+        </GithubLink> */}
       </Footer>
     </Box>
   );
