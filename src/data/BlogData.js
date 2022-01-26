@@ -5,7 +5,7 @@ export const Blogs = [
     tags: ["programming", "job", "passion"],
     date: "29 Dec, 2021",
     imgSrc:
-      "./assets/blogs/7KzwP9nmj.jpg",
+      "https://i.ibb.co/2gJz2vJ/Programming-PASSION-vs-JOB.png",
     link: "https://www.instagram.com/p/CYBoD28lmwy/?utm_source=ig_web_copy_link",
   },
   {
@@ -14,7 +14,7 @@ export const Blogs = [
     tags: ["devops", "ansible", "git", "nagios"],
     date: "7 Dec, 2021",
     imgSrc:
-      "https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625479747640%2F7KzwP9nmj.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
+      "https://i.ibb.co/bKtMJ6s/2.png",
     link: "https://www.instagram.com/p/CXMA8LuPqcU/",
   },
   {
@@ -23,7 +23,7 @@ export const Blogs = [
     tags: ["work", "ethics", "vocabulary"],
     date: "30 Nov, 2021",
     imgSrc:
-      "https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625552344293%2Fegwis0UIX.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
+      "https://i.ibb.co/3hybybw/3.png",
     link: "https://www.instagram.com/p/CW6NFx9Bxug/",
   },
   {
@@ -32,7 +32,7 @@ export const Blogs = [
     tags: ["career", "advice"],
     date: "10 Nov, 2021",
     imgSrc:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--r5oUDhhT--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/036s7j5b73up7455rdth.png",
+      "https://i.ibb.co/rQbnhfh/4.png",
     link: "https://www.instagram.com/p/CWGoJDbB9Bg/",
   },
   {
@@ -41,7 +41,7 @@ export const Blogs = [
     tags: ["javascript", "closures", "hoisting"],
     date: "8 Nov, 2021",
     imgSrc:
-      "https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625295480148%2FlyKj8bpHK.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
+      "https://i.ibb.co/K0Q5Sph/8.png",
     link: "https://www.instagram.com/p/CWBS2IMPSLN/",
   },
   {
@@ -50,26 +50,26 @@ export const Blogs = [
     tags: ["API", "web-development"],
     date: "31 Oct, 2021",
     imgSrc:
-      "https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625240050668%2FGAya9b0XK.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
+      "https://i.ibb.co/ySSyqjJ/5.png",
     link: "https://www.instagram.com/p/CVsu4h0AJBK/",
   },
 
   {
     id: 7,
-    name: "Google Chrome Hidden Features that every developers should know",
+    name: "Google Chrome Hidden Features that every developer should know",
     tags: ["chrome", "development", "browser"],
     date: "20 Oct, 2021",
     imgSrc:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--ZY1EK-Eo--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bcz1u90oq3prr5fga3fs.png",
+      "https://i.ibb.co/FKfvFnH/6.png",
     link: "https://www.instagram.com/p/CVQll0JB1De/",
   },
   {
     id: 8,
-    name: "Common frustration that every developers can relate to",
+    name: "Common frustrations that every developer can relate to",
     tags: ["developer", "work"],
     date: "15 Oct, 2021",
     imgSrc:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--rv4I8UwE--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0a9h50milhlf1us6mn4a.png",
+      "https://i.ibb.co/QNdN2JB/7.png",
     link: "https://www.instagram.com/p/CVDzGwAhjVx/",
   },
 ];
