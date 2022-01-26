@@ -5,7 +5,7 @@ export const Blogs = [
     tags: ["programming", "job", "passion"],
     date: "29 Dec, 2021",
     imgSrc:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--sBeV06Xc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2yrzy75q4dzibqz6rf82.png",
+      "./assets/blogs/7KzwP9nmj.jpg",
     link: "https://www.instagram.com/p/CYBoD28lmwy/?utm_source=ig_web_copy_link",
   },
   {
